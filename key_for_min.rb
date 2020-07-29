@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
  old = name_hash.values[0]
  current_smallest_key = name_hash.key[0]
  name_hash.each do |name, new_value|
-   if new_value < old
+   if old > new_value
      old = new_value
 
 end
