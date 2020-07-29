@@ -4,7 +4,9 @@
 
 def key_for_min_value(name_hash) #defining method
   name_hash.each do |name,value| #enumberable .each - loops
+  
     current_small = #{name},#{value}
+    
     new_smallest = value[0]
     
     count = 0
