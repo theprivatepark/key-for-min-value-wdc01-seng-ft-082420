@@ -5,13 +5,14 @@
 def key_for_min_value(name_hash)          #defining method
   name_hash.each do |key,value|           #enumberable .each - loops
   
-    current_small = #{key},#{value}       #blake,500
+    current_small = #{value}       #500
     
     
     count = 0
     if current_small < value[0].count #comparing current small w new small
       new_smallest = value[0]
-    end
+    count += 1 
+  end
     smallest_value
   end
 end 
