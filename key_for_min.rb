@@ -3,12 +3,13 @@
 # name_hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
- old = name_hash.values[0]
+ smallest_value = name_hash.values[0]
  current_smallest_key = name_hash.key[0]
  name_hash.each do |name, new_value|
-   if old > new_value
-     old = new_value
-
+   if smallest_value > new_value    #500 > 2
+     smallest_value = new_value     #smallest_value = 1
+     current_smallest_key = name    #adam
+   end
+   current_smallest_key
+ end
 end
-
-key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})
