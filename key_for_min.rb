@@ -3,8 +3,7 @@
 # name_hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
- smallest_value = name_hash.values[0]
- current_smallest_key = name_hash.first
+ current_smallest_key,smallest_value = name_hash.first
  
  name_hash.each do |name, new_value|
    if smallest_value > new_value
