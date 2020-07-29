@@ -13,5 +13,5 @@ def key_for_min_value(name_hash)
    end
  end
    
-puts current_smallest_key
+p current_smallest_key
 end
