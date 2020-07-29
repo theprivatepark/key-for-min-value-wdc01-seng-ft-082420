@@ -11,6 +11,8 @@ def key_for_min_value(name_hash)          #defining method
     count = 0
     if current_small < value.count       #comparing current small w new small
       new_smallest = value
+      
+      
     end
     smallest_value
   end
