@@ -6,3 +6,5 @@ def key_for_min_value(name_hash)
  print name_hash
 
 end
+
+key_for_min_value
