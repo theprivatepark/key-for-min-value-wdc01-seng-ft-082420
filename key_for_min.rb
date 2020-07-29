@@ -4,8 +4,8 @@
 
 def key_for_min_value(name_hash) #defining method
   name_hash.each do |name,value| #enumberable each
-    smallest_value = value 
-    smallest_name = name
+    current_smallest_value = value
+  
     if value < smallest_value #comparing current value with smallest_value
       smallest_value = value
       smallest_name = name
