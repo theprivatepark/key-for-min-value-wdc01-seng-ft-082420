@@ -3,7 +3,11 @@
 # name_hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
- print name_hash.values[0]
+ old = name_hash.values[0]
+ current_smallest_key = name_hash.key[0]
+ name_hash.each do |name, new_value|
+   if new_value < old
+     old = new_value
 
 end
 
